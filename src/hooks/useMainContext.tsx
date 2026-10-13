@@ -103,32 +103,69 @@ class ConfiguratorStore {
 
   setHoseData(data: any) {
     this.hoseData = data;
-    // Auto-select first available options
+    // Auto-select first available options on initial load
     if (data && data.hoseSeries?.length > 0) {
-      this.setSeriesId(data.hoseSeries[0].id);
+      const initialSeries =
+        data.hoseSeries.find((s: any) => this.isSeriesAvailable(s)) ||
+        data.hoseSeries[0];
+      if (initialSeries) {
+        this.setSeriesId(initialSeries.id);
+      }
     }
   }
 
-  setSeriesId(id: number) {
+  // Model availability helpers
+  isSizeAvailable = (size: any): boolean => {
+    return Boolean(size?.modelURL && size.modelURL.trim().length > 0);
+  };
+
+  isBraidAvailable = (braid: any): boolean => {
+    return braid?.sizes?.some((s: any) => this.isSizeAvailable(s)) ?? false;
+  };
+
+  isSeriesAvailable = (series: any): boolean => {
+    return series?.braids?.some((b: any) => this.isBraidAvailable(b)) ?? false;
+  };
+
+  // Cascading setters: auto-load default first available size
+  setSeriesId(id: number | null) {
     this.selectedSeriesId = id;
+    if (!id) {
+      this.selectedBraidId = null;
+      this.selectedSizeId = null;
+      return;
+    }
+
     const series = this.hoseData?.hoseSeries.find((s: any) => s.id === id);
-    if (series?.braids?.length > 0) {
-      this.setBraidId(series.braids[0].id);
+    const validBraids = series?.braids || [];
+    const firstBraid =
+      validBraids.find((b: any) => this.isBraidAvailable(b)) || validBraids[0];
+
+    if (firstBraid) {
+      this.setBraidId(firstBraid.id);
     } else {
-      this.setBraidId(null);
+      this.selectedBraidId = null;
+      this.selectedSizeId = null;
     }
   }
 
   setBraidId(id: number | null) {
     this.selectedBraidId = id;
-    const series = this.hoseData?.hoseSeries.find(
-      (s: any) => s.id === this.selectedSeriesId,
-    );
+    if (!id) {
+      this.selectedSizeId = null;
+      return;
+    }
+
+    const series = this.currentSeries;
     const braid = series?.braids?.find((b: any) => b.id === id);
-    if (braid?.sizes?.length > 0) {
-      this.setSizeId(braid.sizes[0].id);
+    const validSizes = braid?.sizes || [];
+    const firstSize =
+      validSizes.find((s: any) => this.isSizeAvailable(s)) || validSizes[0];
+
+    if (firstSize) {
+      this.setSizeId(firstSize.id);
     } else {
-      this.setSizeId(null);
+      this.selectedSizeId = null;
     }
   }
 
@@ -136,27 +173,63 @@ class ConfiguratorStore {
     this.selectedSizeId = id;
   }
 
-  get activeModelName() {
-    if (
-      !this.hoseData ||
-      !this.selectedSeriesId ||
-      !this.selectedBraidId ||
-      !this.selectedSizeId
-    )
-      return "";
+  resetSelection() {
+    this.selectedSeriesId = null;
+    this.selectedBraidId = null;
+    this.selectedSizeId = null;
+  }
 
-    const series = this.hoseData.hoseSeries.find(
-      (s: any) => s.id === this.selectedSeriesId,
+  get currentSeries() {
+    if (!this.hoseData || !this.selectedSeriesId) return null;
+    return (
+      this.hoseData.hoseSeries.find((s: any) => s.id === this.selectedSeriesId) ||
+      null
     );
-    const braid = series?.braids?.find(
-      (b: any) => b.id === this.selectedBraidId,
+  }
+
+  get currentBraid() {
+    const series = this.currentSeries;
+    if (!series || !this.selectedBraidId) return null;
+    return (
+      series.braids?.find((b: any) => b.id === this.selectedBraidId) || null
     );
-    const size = braid?.sizes?.find((s: any) => s.id === this.selectedSizeId);
+  }
+
+  get currentSize() {
+    const braid = this.currentBraid;
+    if (!braid || !this.selectedSizeId) return null;
+    return (
+      braid.sizes?.find((s: any) => s.id === this.selectedSizeId) || null
+    );
+  }
+
+  get availableSeries() {
+    return this.hoseData?.hoseSeries || [];
+  }
+
+  get availableBraids() {
+    return this.currentSeries?.braids || [];
+  }
+
+  get availableSizes() {
+    return this.currentBraid?.sizes || [];
+  }
+
+  get isConfigurationComplete(): boolean {
+    return Boolean(
+      this.selectedSeriesId && this.selectedBraidId && this.selectedSizeId,
+    );
+  }
+
+  get activeModelName() {
+    const series = this.currentSeries;
+    const braid = this.currentBraid;
+    const size = this.currentSize;
 
     if (series && braid && size) {
-      return `${series.name} - ${braid.name} (${size.value})`;
+      return `${series.name} • ${braid.name} (${size.value})`;
     }
-    return "No Selection";
+    return "";
   }
 }
 
@@ -201,23 +274,18 @@ const MainContext = createContext(store);
 import { autorun } from "mobx";
 autorun(() => {
   const { configuratorStore, design3DManager } = store;
-  if (configuratorStore.hoseData) {
-    const series = configuratorStore.hoseData.hoseSeries.find(
-      (s: any) => s.id === configuratorStore.selectedSeriesId,
-    );
-    const braid = series?.braids?.find(
-      (b: any) => b.id === configuratorStore.selectedBraidId,
-    );
-    const size = braid?.sizes?.find(
-      (s: any) => s.id === configuratorStore.selectedSizeId,
-    );
-
-    if (size?.modelURL) {
+  if (
+    configuratorStore.selectedSeriesId &&
+    configuratorStore.selectedBraidId &&
+    configuratorStore.selectedSizeId
+  ) {
+    const size = configuratorStore.currentSize;
+    if (size?.modelURL && size.modelURL.trim() !== "") {
       design3DManager.hosePipe3DManager.setCurrentModelUrl(size.modelURL);
-    } else {
-      design3DManager.hosePipe3DManager.setCurrentModelUrl(null);
+      return;
     }
   }
+  design3DManager.hosePipe3DManager.setCurrentModelUrl(null);
 });
 
 export const useMainContext = () => {

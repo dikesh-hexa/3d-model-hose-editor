@@ -1,217 +1,386 @@
 {
-    "hoseSeries": [
+  "hoseSeries": [
+    {
+      "id": 1,
+      "name": "PROGold",
+      "fullName": "PROGold PTFE Convoluted Hose",
+      "image": "/data/hoseType/div.png",
+      "braids": [
         {
-            "id": 1,
-            "name": "ProGold PTFE Convoluted Hose",
-            "image": "/data/hoseType/div.png",
-            "braids": [
-                {
-                    "id": 101,
-                    "name": "Stainless Steel",
-                    "image": "/data/braidType/div (2).png",
-                    "sizes": [
-                        {
-                            "id": 1,
-                            "value": "06",
-                            "modelURL": "/models/hoses/PROGold/SS/06/06.glb"
-                        },
-                    
-                        {
-                            "id": 3,
-                            "value": "10",
-                            "modelURL": "/models/hoses/PROGold/SS/10.glb"
-                        },
-                        {
-                            "id": 4,
-                            "value": "12",
-                            "modelURL": "/models/hoses/PROGold/SS/12.glb"
-                        },
-                        {
-                            "id": 5,
-                            "value": "16",
-                            "modelURL": "/models/hoses/PROGold/SS/16.glb"
-                        },
-                        {
-                            "id": 6,
-                            "value": "20",
-                            "modelURL": "/models/hoses/PROGold/SS/20.glb"
-                        },
-                        {
-                            "id": 7,
-                            "value": "24",
-                            "modelURL": "/models/hoses/PROGold/SS/24.glb"
-                        },
-                        {
-                            "id": 8,
-                            "value": "28",
-                            "modelURL": "/models/hoses/PROGold/SS/28.glb"
-                        },
-                        {
-                            "id": 7,
-                            "value": "32",
-                            "modelURL": "/models/hoses/PROGold/SS/32.glb"
-                        }
-                    ]
-                },
-                {
-                    "id": 102,
-                    "name": "Polyester",
-                    "image": "/data/braidType/div (2).png",
-                    "sizes": [
-                        {
-                            "id": 1,
-                            "value": "06",
-                            "modelURL": "/models/hoses/PROGold/Polyester/06/06.glb"
-                        },
-                        {
-                            "id": 2,
-                            "value": "08",
-                            "modelURL": ""
-                        },
-                        {
-                            "id": 3,
-                            "value": "10",
-                            "modelURL": ""
-                        },
-                        {
-                            "id": 4,
-                            "value": "12",
-                            "modelURL": ""
-                        },
-                        {
-                            "id": 5,
-                            "value": "16",
-                            "modelURL": ""
-                        },
-                        {
-                            "id": 6,
-                            "value": "20",
-                            "modelURL": ""
-                        }
-                    ]
-                },
-                {
-                    "id": 103,
-                    "name": "Aramid",
-                    "image": "/data/braidType/div (3).png",
-                    "sizes": [
-                        {
-                            "id": 1,
-                            "value": "06",
-                            "modelURL": "/models/hoses/PROGold/Aramid/06/06.glb"
-                        },
-                        {
-                            "id": 2,
-                            "value": "08",
-                            "modelURL": ""
-                        },
-                        {
-                            "id": 3,
-                            "value": "10",
-                            "modelURL": ""
-                        },
-                        {
-                            "id": 4,
-                            "value": "12",
-                            "modelURL": ""
-                        },
-                        {
-                            "id": 5,
-                            "value": "16",
-                            "modelURL": ""
-                        },
-                        {
-                            "id": 5,
-                            "value": "20",
-                            "modelURL": ""
-                        },
-                        {
-                            "id": 5,
-                            "value": "24",
-                            "modelURL": ""
-                        },
-                        {
-                            "id": 5,
-                            "value": "28",
-                            "modelURL": ""
-                        },
-                        {
-                            "id": 5,
-                            "value": "32",
-                            "modelURL": ""
-                        }
-                    ]
-                },
-                {
-                    "id": 104,
-                    "name": "High Temperature Polymer",
-                    "image": "/data/braidType/div (5).svg",
-                    "sizes": [
-                        {
-                            "id": 1,
-                            "value": "06",
-                            "modelURL": "/models/hoses/PROGold/HTPB/06/06.glb"
-                        },
-                        {
-                            "id": 2,
-                            "value": "08",
-                            "modelURL": ""
-                        },
-                        {
-                            "id": 3,
-                            "value": "20",
-                            "modelURL": ""
-                        },
-                        {
-                            "id": 4,
-                            "value": "24",
-                            "modelURL": ""
-                        }
-                    ]
-                },
-                {
-                    "id": 105,
-                    "name": "Clear Convoluted",
-                    "image": "/data/braidType/div (4).png",
-                    "sizes": [
-                        {
-                            "id": 1,
-                            "value": "06",
-                            "modelURL": "/models/hoses/PROGold/ClearConvoluted/06/06.glb"
-                        },
-                        {
-                            "id": 2,
-                            "value": "08",
-                            "modelURL": ""
-                        },
-                        {
-                            "id": 3,
-                            "value": "10",
-                            "modelURL": ""
-                        },
-                        {
-                            "id": 4,
-                            "value": "12",
-                            "modelURL": ""
-                        },
-                        {
-                            "id": 5,
-                            "value": "16",
-                            "modelURL": ""
-                        },
-                        {
-                            "id": 6,
-                            "value": "20",
-                            "modelURL": ""
-                        },
-                        {
-                            "id": 7,
-                            "value": "24",
-                            "modelURL": ""
-                        }
-                    ]
-                }
-            ]
+          "id": 101,
+          "name": "Stainless Steel",
+          "image": "/data/braidType/div (2).png",
+          "sizes": [
+            {
+              "id": 10101,
+              "value": "06",
+              "modelURL": "/models/hoses/PROGold/SS/06/06.glb"
+            },
+            {
+              "id": 10102,
+              "value": "08",
+              "modelURL": "/models/hoses/PROGold/SS/08/08.glb"
+            },
+            {
+              "id": 10103,
+              "value": "10",
+              "modelURL": "/models/hoses/PROGold/SS/10/10.glb"
+            },
+            {
+              "id": 10104,
+              "value": "12",
+              "modelURL": "/models/hoses/PROGold/SS/12/12.glb"
+            },
+            {
+              "id": 10105,
+              "value": "16",
+              "modelURL": "/models/hoses/PROGold/SS/16/16.glb"
+            },
+            {
+              "id": 10106,
+              "value": "20",
+              "modelURL": "/models/hoses/PROGold/SS/20/20.glb"
+            },
+            {
+              "id": 10107,
+              "value": "24",
+              "modelURL": "/models/hoses/PROGold/SS/24/24.glb"
+            },
+            {
+              "id": 10108,
+              "value": "28",
+              "modelURL": "/models/hoses/PROGold/SS/28/28.glb"
+            },
+            {
+              "id": 10109,
+              "value": "32",
+              "modelURL": "/models/hoses/PROGold/SS/32/32.glb"
+            }
+          ]
+        },
+        {
+          "id": 102,
+          "name": "Polyester",
+          "image": "/data/braidType/div (2).png",
+          "sizes": [
+            {
+              "id": 10201,
+              "value": "06",
+              "modelURL": "/models/hoses/PROGold/Polyester/06/06.glb"
+            },
+            {
+              "id": 10202,
+              "value": "08",
+              "modelURL": ""
+            },
+            {
+              "id": 10203,
+              "value": "10",
+              "modelURL": ""
+            },
+            {
+              "id": 10204,
+              "value": "12",
+              "modelURL": ""
+            },
+            {
+              "id": 10205,
+              "value": "16",
+              "modelURL": ""
+            },
+            {
+              "id": 10206,
+              "value": "20",
+              "modelURL": ""
+            }
+          ]
+        },
+        {
+          "id": 103,
+          "name": "Aramid",
+          "image": "/data/braidType/div (3).png",
+          "sizes": [
+            {
+              "id": 10301,
+              "value": "06",
+              "modelURL": "/models/hoses/PROGold/Aramid/06/06.glb"
+            },
+            {
+              "id": 10302,
+              "value": "08",
+              "modelURL": ""
+            },
+            {
+              "id": 10303,
+              "value": "10",
+              "modelURL": ""
+            },
+            {
+              "id": 10304,
+              "value": "12",
+              "modelURL": ""
+            },
+            {
+              "id": 10305,
+              "value": "16",
+              "modelURL": ""
+            },
+            {
+              "id": 10306,
+              "value": "20",
+              "modelURL": ""
+            },
+            {
+              "id": 10307,
+              "value": "24",
+              "modelURL": ""
+            },
+            {
+              "id": 10308,
+              "value": "28",
+              "modelURL": ""
+            },
+            {
+              "id": 10309,
+              "value": "32",
+              "modelURL": ""
+            }
+          ]
+        },
+        {
+          "id": 104,
+          "name": "High Temperature Polymer",
+          "image": "/data/braidType/div (5).svg",
+          "sizes": [
+            {
+              "id": 10401,
+              "value": "06",
+              "modelURL": "/models/hoses/PROGold/HTPB/06/06.glb"
+            },
+            {
+              "id": 10402,
+              "value": "08",
+              "modelURL": ""
+            },
+            {
+              "id": 10403,
+              "value": "20",
+              "modelURL": ""
+            },
+            {
+              "id": 10404,
+              "value": "24",
+              "modelURL": ""
+            }
+          ]
+        },
+        {
+          "id": 105,
+          "name": "Clear Convoluted",
+          "image": "/data/braidType/div (4).png",
+          "sizes": [
+            {
+              "id": 10501,
+              "value": "06",
+              "modelURL": "/models/hoses/PROGold/ClearConvoluted/06/06.glb"
+            },
+            {
+              "id": 10502,
+              "value": "08",
+              "modelURL": ""
+            },
+            {
+              "id": 10503,
+              "value": "10",
+              "modelURL": ""
+            },
+            {
+              "id": 10504,
+              "value": "12",
+              "modelURL": ""
+            },
+            {
+              "id": 10505,
+              "value": "16",
+              "modelURL": ""
+            },
+            {
+              "id": 10506,
+              "value": "20",
+              "modelURL": ""
+            },
+            {
+              "id": 10507,
+              "value": "24",
+              "modelURL": ""
+            }
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Smooth Bore",
+      "fullName": "Smooth Bore Hose",
+      "image": "/data/hoseType/div.png",
+      "braids": [
+        {
+          "id": 201,
+          "name": "Stainless Steel",
+          "image": "/data/braidType/div (2).png",
+          "sizes": [
+            {
+              "id": 20101,
+              "value": "06",
+              "modelURL": ""
+            },
+            {
+              "id": 20102,
+              "value": "08",
+              "modelURL": ""
+            },
+            {
+              "id": 20103,
+              "value": "10",
+              "modelURL": ""
+            },
+            {
+              "id": 20104,
+              "value": "12",
+              "modelURL": ""
+            },
+            {
+              "id": 20105,
+              "value": "16",
+              "modelURL": ""
+            },
+            {
+              "id": 20106,
+              "value": "20",
+              "modelURL": ""
+            }
+          ]
+        },
+        {
+          "id": 202,
+          "name": "Aramid",
+          "image": "/data/braidType/div (3).png",
+          "sizes": [
+            {
+              "id": 20201,
+              "value": "06",
+              "modelURL": ""
+            },
+            {
+              "id": 20202,
+              "value": "08",
+              "modelURL": ""
+            },
+            {
+              "id": 20203,
+              "value": "10",
+              "modelURL": ""
+            },
+            {
+              "id": 20204,
+              "value": "12",
+              "modelURL": ""
+            },
+            {
+              "id": 20205,
+              "value": "16",
+              "modelURL": ""
+            },
+            {
+              "id": 20206,
+              "value": "20",
+              "modelURL": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "PROBlack",
+      "fullName": "PROBlack Hose",
+      "image": "/data/hoseType/div.png",
+      "braids": [
+        {
+          "id": 301,
+          "name": "Stainless Steel",
+          "image": "/data/braidType/div (2).png",
+          "sizes": [
+            {
+              "id": 30101,
+              "value": "06",
+              "modelURL": ""
+            },
+            {
+              "id": 30102,
+              "value": "08",
+              "modelURL": ""
+            },
+            {
+              "id": 30103,
+              "value": "10",
+              "modelURL": ""
+            },
+            {
+              "id": 30104,
+              "value": "12",
+              "modelURL": ""
+            },
+            {
+              "id": 30105,
+              "value": "16",
+              "modelURL": ""
+            },
+            {
+              "id": 30106,
+              "value": "20",
+              "modelURL": ""
+            }
+          ]
+        },
+        {
+          "id": 302,
+          "name": "Aramid",
+          "image": "/data/braidType/div (3).png",
+          "sizes": [
+            {
+              "id": 30201,
+              "value": "06",
+              "modelURL": ""
+            },
+            {
+              "id": 30202,
+              "value": "08",
+              "modelURL": ""
+            },
+            {
+              "id": 30203,
+              "value": "10",
+              "modelURL": ""
+            },
+            {
+              "id": 30204,
+              "value": "12",
+              "modelURL": ""
+            },
+            {
+              "id": 30205,
+              "value": "16",
+              "modelURL": ""
+            },
+            {
+              "id": 30206,
+              "value": "20",
+              "modelURL": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
