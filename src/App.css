@@ -14,11 +14,49 @@ body {
 
 .app-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
   background-color: #ffffff;
   overflow: hidden;
+}
+
+/* Header - exact match to 3d-model-editor (h-14 bg-gray-200 border-b border-gray-300 px-4 flex items-center z-10) */
+.header {
+  height: 56px;
+  min-height: 56px;
+  background-color: #e5e7eb;
+  border-bottom: 1px solid #d1d5db;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 18px;
+  color: #2563eb;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* Body Container - fills remaining height */
+.body-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: calc(100vh - 56px);
+  overflow: hidden;
+  position: relative;
 }
 
 /* Sidebar - exact match to 3d-model-editor (w-64 bg-gray-100 border-r border-gray-300 p-4 gap-4) */
@@ -33,6 +71,8 @@ body {
   gap: 16px;
   overflow-y: auto;
   box-sizing: border-box;
+  text-align: left;
+  align-items: stretch;
 }
 
 .sidebar-title {
@@ -41,11 +81,14 @@ body {
   color: #1f2937;
   margin: 0;
   letter-spacing: -0.01em;
+  text-align: left;
+  width: 100%;
 }
 
 .sidebar-loading {
   font-size: 12px;
   color: #6b7280;
+  text-align: left;
 }
 
 /* Configurator Form */
@@ -53,11 +96,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  width: 100%;
+  text-align: left;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  text-align: left;
 }
 
 .form-label {
@@ -66,6 +114,8 @@ body {
   color: #374151;
   font-weight: 500;
   margin-bottom: 4px;
+  text-align: left;
+  width: 100%;
 }
 
 .select-wrapper {

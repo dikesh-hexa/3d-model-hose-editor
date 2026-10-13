@@ -2,8 +2,10 @@ import React from "react";
 
 export const Header: React.FC = () => {
   return (
-    <div className="header">
-      <h2 className="header-title">Hose Pipe Viewer</h2>
-    </div>
+    <header className="header">
+      <div className="header-left">
+        <span className="header-title">Hose Pipe Viewer</span>
+      </div>
+    </header>
   );
 };

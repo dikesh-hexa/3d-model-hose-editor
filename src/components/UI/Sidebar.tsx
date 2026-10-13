@@ -59,7 +59,6 @@ export const Sidebar: React.FC = observer(() => {
               value={selectedSeriesId ?? ""}
               onChange={handleSeriesChange}
             >
-              <option value="">Select Category...</option>
               {availableSeries.map((series: any) => {
                 const available = isSeriesAvailable(series);
                 return (
@@ -89,11 +88,6 @@ export const Sidebar: React.FC = observer(() => {
               onChange={handleBraidChange}
               disabled={!selectedSeriesId}
             >
-              <option value="">
-                {!selectedSeriesId
-                  ? "Select Category first"
-                  : "Select a braid..."}
-              </option>
               {availableBraids.map((braid: any) => {
                 const available = isBraidAvailable(braid);
                 return (
@@ -119,9 +113,6 @@ export const Sidebar: React.FC = observer(() => {
               onChange={handleSizeChange}
               disabled={!selectedBraidId}
             >
-              <option value="">
-                {!selectedBraidId ? "Select Braid first" : "Select a size..."}
-              </option>
               {availableSizes.map((size: any) => {
                 const available = isSizeAvailable(size);
                 return (
