@@ -231,33 +231,28 @@
           "sizes": [
             {
               "id": 20101,
-              "value": "06",
-              "modelURL": ""
+              "value": "02",
+              "modelURL": "/models/hoses/Smooth Bore/Stainless Steel/02/02.glb"
             },
             {
               "id": 20102,
-              "value": "08",
-              "modelURL": ""
+              "value": "03",
+              "modelURL": "/models/hoses/Smooth Bore/Stainless Steel/03/03.glb"
             },
             {
               "id": 20103,
-              "value": "10",
-              "modelURL": ""
+              "value": "04",
+              "modelURL": "/models/hoses/Smooth Bore/Stainless Steel/04/04.glb"
             },
             {
               "id": 20104,
-              "value": "12",
-              "modelURL": ""
+              "value": "06",
+              "modelURL": "/models/hoses/Smooth Bore/Stainless Steel/06/06.glb"
             },
             {
               "id": 20105,
-              "value": "16",
-              "modelURL": ""
-            },
-            {
-              "id": 20106,
-              "value": "20",
-              "modelURL": ""
+              "value": "08",
+              "modelURL": "/models/hoses/Smooth Bore/Stainless Steel/08/08.glb"
             }
           ]
         },
