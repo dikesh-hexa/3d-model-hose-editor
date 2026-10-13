@@ -2,7 +2,6 @@ import React from 'react'
 import { observer } from 'mobx-react-lite'
 import { MainContextProvider, useMainContext } from './hooks/useMainContext'
 import { Viewer3D } from './components/Viewer3D/Viewer3D'
-import { Header } from './components/UI/Header'
 import { Sidebar } from './components/UI/Sidebar'
 import { FloatingTitle } from './components/UI/FloatingTitle'
 import './App.css'
@@ -34,11 +33,8 @@ function App() {
   return (
     <MainContextProvider>
       <div className="app-container">
-        <Header />
-        <div className="body-container">
-          <Sidebar />
-          <MainViewerArea />
-        </div>
+        <Sidebar />
+        <MainViewerArea />
       </div>
     </MainContextProvider>
   )

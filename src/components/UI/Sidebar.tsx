@@ -9,7 +9,7 @@ export const Sidebar: React.FC = observer(() => {
   if (!data) {
     return (
       <aside className="sidebar">
-        <h3 className="sidebar-title">Hose Configurator</h3>
+        <h2 className="sidebar-title">Model Explorer</h2>
         <p className="sidebar-loading">Loading catalog data...</p>
       </aside>
     );
@@ -44,18 +44,13 @@ export const Sidebar: React.FC = observer(() => {
 
   return (
     <aside className="sidebar">
-      <div className="sidebar-header">
-        <h3 className="sidebar-title">Hose Configurator</h3>
-        <p className="sidebar-subtitle">
-          Configure category, braid, and size to view 3D pipe.
-        </p>
-      </div>
+      <h2 className="sidebar-title">Model Explorer</h2>
 
       <div className="config-form">
         {/* DROPDOWN 1: CATEGORY */}
         <div className="form-group">
           <label htmlFor="series-select" className="form-label">
-            1. Category
+            Select Category
           </label>
           <div className="select-wrapper">
             <select
@@ -84,7 +79,7 @@ export const Sidebar: React.FC = observer(() => {
         {/* DROPDOWN 2: BRAID */}
         <div className="form-group">
           <label htmlFor="braid-select" className="form-label">
-            2. Braid Type
+            Select Braid
           </label>
           <div className="select-wrapper">
             <select
@@ -95,16 +90,14 @@ export const Sidebar: React.FC = observer(() => {
               disabled={!selectedSeriesId}
             >
               <option value="">
-                {!selectedSeriesId ? "Select Category first" : "Select Braid..."}
+                {!selectedSeriesId
+                  ? "Select Category first"
+                  : "Select a braid..."}
               </option>
               {availableBraids.map((braid: any) => {
                 const available = isBraidAvailable(braid);
                 return (
-                  <option
-                    key={braid.id}
-                    value={braid.id}
-                    disabled={!available}
-                  >
+                  <option key={braid.id} value={braid.id} disabled={!available}>
                     {braid.name} {!available ? "(Unavailable)" : ""}
                   </option>
                 );
@@ -116,7 +109,7 @@ export const Sidebar: React.FC = observer(() => {
         {/* DROPDOWN 3: SIZE */}
         <div className="form-group">
           <label htmlFor="size-select" className="form-label">
-            3. Braid Size
+            Select Size
           </label>
           <div className="select-wrapper">
             <select
@@ -127,17 +120,13 @@ export const Sidebar: React.FC = observer(() => {
               disabled={!selectedBraidId}
             >
               <option value="">
-                {!selectedBraidId ? "Select Braid first" : "Select Size..."}
+                {!selectedBraidId ? "Select Braid first" : "Select a size..."}
               </option>
               {availableSizes.map((size: any) => {
                 const available = isSizeAvailable(size);
                 return (
-                  <option
-                    key={size.id}
-                    value={size.id}
-                    disabled={!available}
-                  >
-                    Dash {size.value} {!available ? "(No Model)" : ""}
+                  <option key={size.id} value={size.id} disabled={!available}>
+                    - {size.value} {!available ? "(No Model)" : ""}
                   </option>
                 );
               })}

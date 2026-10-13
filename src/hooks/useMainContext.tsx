@@ -222,9 +222,13 @@ class ConfiguratorStore {
   }
 
   get activeModelName() {
+    const size = this.currentSize;
+    if (size?.code) {
+      return size.code;
+    }
+
     const series = this.currentSeries;
     const braid = this.currentBraid;
-    const size = this.currentSize;
 
     if (series && braid && size) {
       return `${series.name} • ${braid.name} (${size.value})`;

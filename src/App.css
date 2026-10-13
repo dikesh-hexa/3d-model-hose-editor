@@ -14,94 +14,58 @@ body {
 
 .app-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 100vh;
   width: 100vw;
-  background-color: #f4f6f8;
+  background-color: #ffffff;
+  overflow: hidden;
 }
 
-/* Header */
-.header {
-  height: 50px;
-  background-color: #e6eef5;
-  border-bottom: 1px solid #d0d7de;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-}
-
-.header-title {
-  margin: 0;
-  font-size: 16px;
-  color: #0b57d0;
-  font-weight: 700;
-}
-
-/* Body Container */
-.body-container {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  height: calc(100vh - 50px);
-}
-
-/* Sidebar */
+/* Sidebar - exact match to 3d-model-editor (w-64 bg-gray-100 border-r border-gray-300 p-4 gap-4) */
 .sidebar {
-  width: 270px;
-  background-color: #f8fafc;
-  border-right: 1px solid #e2e8f0;
-  padding: 20px;
+  width: 256px;
+  min-width: 256px;
+  background-color: #f3f4f6;
+  border-right: 1px solid #d1d5db;
+  padding: 16px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 16px;
   overflow-y: auto;
   box-sizing: border-box;
 }
 
-.sidebar-header {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
 .sidebar-title {
-  font-size: 15px;
-  font-weight: 700;
-  color: #0f172a;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
   margin: 0;
   letter-spacing: -0.01em;
 }
 
-.sidebar-subtitle {
-  font-size: 12px;
-  color: #64748b;
-  margin: 0;
-  line-height: 1.4;
-}
-
 .sidebar-loading {
-  font-size: 13px;
-  color: #64748b;
+  font-size: 12px;
+  color: #6b7280;
 }
 
 /* Configurator Form */
 .config-form {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 6px;
 }
 
 .form-label {
+  display: block;
   font-size: 12px;
-  color: #334155;
-  font-weight: 600;
-  letter-spacing: 0.01em;
+  color: #374151;
+  font-weight: 500;
+  margin-bottom: 4px;
 }
 
 .select-wrapper {
@@ -113,38 +77,39 @@ body {
   appearance: none;
   -webkit-appearance: none;
   width: 100%;
-  padding: 9px 34px 9px 12px;
+  padding: 8px 28px 8px 12px;
   background-color: #ffffff;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23475569' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%236b7280'%3e%3cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: right 10px center;
-  background-size: 15px 15px;
-  border: 1.5px solid #cbd5e1;
+  background-position: right 8px center;
+  background-size: 16px 16px;
+  border: 1px solid #d1d5db;
   border-radius: 6px;
-  font-size: 13px;
-  font-weight: 500;
-  color: #0f172a;
+  font-size: 12px;
+  font-weight: 400;
+  color: #374151;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   outline: none;
   cursor: pointer;
   box-sizing: border-box;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .config-select:hover:not(:disabled) {
-  border-color: #0b57d0;
+  border-color: #9ca3af;
 }
 
 .config-select:focus {
-  border-color: #0b57d0;
-  box-shadow: 0 0 0 3px rgba(11, 87, 208, 0.15);
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px #3b82f6;
 }
 
 .config-select:disabled {
-  background-color: #f1f5f9;
-  border-color: #e2e8f0;
-  color: #94a3b8;
+  background-color: #f9fafb;
+  border-color: #e5e7eb;
+  color: #9ca3af;
   cursor: not-allowed;
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 /* Info Summary Block */
@@ -277,20 +242,21 @@ body {
 /* Floating Title */
 .floating-title-container {
   position: absolute;
-  top: 30px;
+  top: 24px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
   pointer-events: none;
+  white-space: nowrap;
 }
 
 .floating-title {
   margin: 0;
-  font-size: 24px;
-  font-weight: 800;
-  color: #222;
-  letter-spacing: 1px;
-  text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.8);
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f2937;
+  letter-spacing: 0.025em;
+  text-align: center;
 }
 
 /* Feedback Buttons Container */
