@@ -61,7 +61,7 @@ export const cameraHoseView = (
 
   // 8. Enforce balanced distance bounds
   cameraControls.maxDistance = finalDistance * 1.5;
-  cameraControls.minDistance = finalDistance * 0.8;
+  cameraControls.minDistance = finalDistance * 0.6;
 
   // 9. Force camera-controls internal state to update immediately
   if (typeof (cameraControls as any).update === "function") {
