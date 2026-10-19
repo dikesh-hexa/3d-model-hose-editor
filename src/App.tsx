@@ -5,6 +5,8 @@ import { Viewer3D } from './components/Viewer3D/Viewer3D'
 import { Header } from './components/UI/Header'
 import { Sidebar } from './components/UI/Sidebar'
 import { FloatingTitle } from './components/UI/FloatingTitle'
+import { ModelTester } from './components/ModelTester/ModelTester'
+import { useRouter } from './router/useRouter'
 import './App.css'
 
 const MainViewerArea: React.FC = observer(() => {
@@ -31,13 +33,21 @@ const MainViewerArea: React.FC = observer(() => {
 })
 
 function App() {
+  const { currentPath, navigate, isTestRoute } = useRouter()
+
   return (
     <MainContextProvider>
       <div className="app-container">
-        <Header />
+        <Header currentPath={currentPath} onNavigate={navigate} />
         <div className="body-container">
-          <Sidebar />
-          <MainViewerArea />
+          {isTestRoute ? (
+            <ModelTester />
+          ) : (
+            <>
+              <Sidebar />
+              <MainViewerArea />
+            </>
+          )}
         </div>
       </div>
     </MainContextProvider>
