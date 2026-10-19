@@ -268,31 +268,31 @@
               "id": 20101,
               "value": "02",
               "code": "SB-02-S",
-              "modelURL": "/models/hoses/Smooth Bore/Stainless Steel/02/02.glb"
+              "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel/02/02.glb"
             },
             {
               "id": 20102,
               "value": "03",
               "code": "SB-03-S",
-              "modelURL": "/models/hoses/Smooth Bore/Stainless Steel/03/03.glb"
+              "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel/03/03.glb"
             },
             {
               "id": 20103,
               "value": "04",
               "code": "SB-04-S",
-              "modelURL": "/models/hoses/Smooth Bore/Stainless Steel/04/04.glb"
+              "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel/04/04.glb"
             },
             {
               "id": 20104,
               "value": "06",
               "code": "SB-06-S",
-              "modelURL": "/models/hoses/Smooth Bore/Stainless Steel/06/06.glb"
+              "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel/06/06.glb"
             },
             {
               "id": 20105,
               "value": "08",
               "code": "SB-08-S",
-              "modelURL": "/models/hoses/Smooth Bore/Stainless Steel/08/08.glb"
+              "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel/08/08.glb"
             }
           ]
         },
@@ -303,52 +303,148 @@
           "sizes": [
             {
               "id": 20201,
+              "value": "02",
+              "code": "SB-02-SS-BK",
+              "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel & Black_PVC/02/02.glb"
+            },
+            {
+              "id": 20202,
+              "value": "03",
+              "code": "SB-03-SS-BK",
+              "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel & Black_PVC/03/03.glb"
+            },
+            {
+              "id": 20203,
               "value": "04",
               "code": "SB-04-SS-BK",
-              "modelURL": "/models/hoses/Smooth Bore/Stainless Steel & Black PVC Sheath/04/04.glb"
+              "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel & Black_PVC/04/04.glb"
             }
           ]
         },
         {
           "id": 203,
-          "name": "Aramid",
+          "name": "Kevlar",
           "image": "/data/braidType/div (3).png",
           "sizes": [
             {
               "id": 20301,
-              "value": "06",
-              "code": "SB-06-AM",
-              "modelURL": ""
+              "value": "02",
+              "code": "SB-02-K",
+              "modelURL": "/models/hoses/Smooth Bore Braids/Kevlar/02/02.glb"
             },
             {
               "id": 20302,
-              "value": "08",
-              "code": "SB-08-AM",
-              "modelURL": ""
+              "value": "03",
+              "code": "SB-03-K",
+              "modelURL": "/models/hoses/Smooth Bore Braids/Kevlar/03/03.glb"
             },
             {
               "id": 20303,
-              "value": "10",
-              "code": "SB-10-AM",
-              "modelURL": ""
+              "value": "04",
+              "code": "SB-04-K",
+              "modelURL": "/models/hoses/Smooth Bore Braids/Kevlar/04/04.glb"
+            }
+          ]
+        },
+        {
+          "id": 204,
+          "name": "Stainless Steel & Black TPE",
+          "image": "/data/braidType/div (2).png",
+          "sizes": [
+            {
+              "id": 20401,
+              "value": "06",
+              "code": "SB-06-SS-TPE",
+              "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel & Black_TPE/06/06.glb"
             },
             {
-              "id": 20304,
-              "value": "12",
-              "code": "SB-12-AM",
-              "modelURL": ""
+              "id": 20402,
+              "value": "08",
+              "code": "SB-08-SS-TPE",
+              "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel & Black_TPE/08/08.glb"
+            }
+          ]
+        },
+        {
+          "id": 205,
+          "name": "Convoluted HB",
+          "image": "/data/braidType/div (4).png",
+          "sizes": [
+            {
+              "id": 20501,
+              "value": "06",
+              "code": "SB-06-CHB",
+              "modelURL": "/models/hoses/Smooth Bore Braids/Convoluted_HB/06/06.glb"
+            }
+          ]
+        },
+        {
+          "id": 206,
+          "name": "High Pressure",
+          "image": "/data/braidType/div (2).png",
+          "sizes": [
+            {
+              "id": 20601,
+              "value": "04",
+              "code": "SB-04-HP",
+              "modelURL": "/models/hoses/Smooth Bore Braids/High_Pressure/04/04.glb"
             },
             {
-              "id": 20305,
-              "value": "16",
-              "code": "SB-16-AM",
-              "modelURL": ""
+              "id": 20602,
+              "value": "06",
+              "code": "SB-06-HP",
+              "modelURL": "/models/hoses/Smooth Bore Braids/High_Pressure/06/06.glb"
+            }
+          ]
+        },
+        {
+          "id": 207,
+          "name": "Impregnated Glass Fibre",
+          "image": "/data/braidType/div (5).svg",
+          "sizes": [
+            {
+              "id": 20701,
+              "value": "06",
+              "code": "SB-06-IGF",
+              "modelURL": "/models/hoses/Smooth Bore Braids/Impregnated Glass Fibre/06/06.glb"
+            }
+          ]
+        },
+        {
+          "id": 208,
+          "name": "Polyester",
+          "image": "/data/braidType/div (2).png",
+          "sizes": [
+            {
+              "id": 20801,
+              "value": "03",
+              "code": "SB-03-P",
+              "modelURL": "/models/hoses/Smooth Bore Braids/Polyester/03/03.glb"
             },
             {
-              "id": 20306,
-              "value": "20",
-              "code": "SB-20-AM",
-              "modelURL": ""
+              "id": 20802,
+              "value": "04",
+              "code": "SB-04-P",
+              "modelURL": "/models/hoses/Smooth Bore Braids/Polyester/04/04.glb"
+            }
+          ]
+        },
+        {
+          "id": 209,
+          "name": "Translucent",
+          "image": "/data/braidType/div (4).png",
+          "sizes": [
+            {
+              "id": 20901,
+              "value": "03",
+              "code": "SB-03-TR",
+              "modelURL": "/models/hoses/Smooth Bore Braids/Translucent/03/03.glb"
+            },
+            {
+              "id": 20902,
+              "value": "04",
+              "code": "SB-04-TR",
+              "modelURL": "/models/hoses/Smooth Bore Braids/Translucent/04/04.glb"
             }
           ]
         }
