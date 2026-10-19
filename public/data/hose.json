@@ -457,49 +457,6 @@
       "image": "/data/hoseType/div.png",
       "braids": [
         {
-          "id": 301,
-          "name": "Polyester",
-          "image": "/data/braidType/div (2).png",
-          "sizes": [
-            {
-              "id": 30101,
-              "value": "06",
-              "code": "DR-06-P",
-              "modelURL": ""
-            },
-            {
-              "id": 30102,
-              "value": "08",
-              "code": "DR-08-P",
-              "modelURL": ""
-            },
-            {
-              "id": 30103,
-              "value": "10",
-              "code": "DR-10-P",
-              "modelURL": ""
-            },
-            {
-              "id": 30104,
-              "value": "12",
-              "code": "DR-12-P",
-              "modelURL": ""
-            },
-            {
-              "id": 30105,
-              "value": "16",
-              "code": "DR-16-P",
-              "modelURL": ""
-            },
-            {
-              "id": 30106,
-              "value": "20",
-              "code": "DR-20-P",
-              "modelURL": ""
-            }
-          ]
-        },
-        {
           "id": 302,
           "name": "Aramid",
           "image": "/data/braidType/div (3).png",
@@ -508,36 +465,79 @@
               "id": 30201,
               "value": "06",
               "code": "DR-06-AM",
-              "modelURL": ""
+              "modelURL": "/models/hoses/ProBlack Braids/ProBlack_SB_Aramid/06/06.glb"
             },
             {
               "id": 30202,
               "value": "08",
               "code": "DR-08-AM",
-              "modelURL": ""
+              "modelURL": "/models/hoses/ProBlack Braids/ProBlack_SB_Aramid/08/08.glb"
             },
             {
               "id": 30203,
               "value": "10",
               "code": "DR-10-AM",
-              "modelURL": ""
+              "modelURL": "/models/hoses/ProBlack Braids/ProBlack_SB_Aramid/10/10.glb"
             },
             {
               "id": 30204,
               "value": "12",
               "code": "DR-12-AM",
-              "modelURL": ""
+              "modelURL": "/models/hoses/ProBlack Braids/ProBlack_SB_Aramid/12/12.glb"
             },
             {
               "id": 30205,
               "value": "16",
               "code": "DR-16-AM",
-              "modelURL": ""
+              "modelURL": "/models/hoses/ProBlack Braids/ProBlack_SB_Aramid/16/16.glb"
             },
             {
               "id": 30206,
               "value": "20",
               "code": "DR-20-AM",
+              "modelURL": ""
+            }
+          ]
+        },
+        {
+          "id": 303,
+          "name": "Stainless Steel",
+          "image": "/data/braidType/div (2).png",
+          "sizes": [
+            {
+              "id": 30301,
+              "value": "06",
+              "code": "DR-06-S",
+              "modelURL": "/models/hoses/ProBlack Braids/ProBlack_SB_Stainless_Steel/06/06.glb"
+            },
+            {
+              "id": 30302,
+              "value": "08",
+              "code": "DR-08-S",
+              "modelURL": "/models/hoses/ProBlack Braids/ProBlack_SB_Stainless_Steel/08/08.glb"
+            },
+            {
+              "id": 30303,
+              "value": "10",
+              "code": "DR-10-S",
+              "modelURL": "/models/hoses/ProBlack Braids/ProBlack_SB_Stainless_Steel/10/10.glb"
+            },
+            {
+              "id": 30304,
+              "value": "12",
+              "code": "DR-12-S",
+              "modelURL": "/models/hoses/ProBlack Braids/ProBlack_SB_Stainless_Steel/12/12.glb"
+            },
+            {
+              "id": 30305,
+              "value": "16",
+              "code": "DR-16-S",
+              "modelURL": "/models/hoses/ProBlack Braids/ProBlack_SB_Stainless_Steel/16/16.glb"
+            },
+            {
+              "id": 30306,
+              "value": "20",
+              "code": "DR-20-S",
               "modelURL": ""
             }
           ]
