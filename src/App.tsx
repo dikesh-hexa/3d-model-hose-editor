@@ -33,12 +33,12 @@ const MainViewerArea: React.FC = observer(() => {
 })
 
 function App() {
-  const { currentPath, navigate, isTestRoute } = useRouter()
+  const { isTestRoute } = useRouter()
 
   return (
     <MainContextProvider>
       <div className="app-container">
-        <Header currentPath={currentPath} onNavigate={navigate} />
+        <Header />
         <div className="body-container">
           {isTestRoute ? (
             <ModelTester />

@@ -82,31 +82,31 @@
               "id": 10202,
               "value": "08",
               "code": "AR-08-P",
-              "modelURL": ""
+              "modelURL": "/models/hoses/PROGold/Polyester/08/08.glb"
             },
             {
               "id": 10203,
               "value": "10",
               "code": "AR-10-P",
-              "modelURL": ""
+              "modelURL": "/models/hoses/PROGold/Polyester/10/10.glb"
             },
             {
               "id": 10204,
               "value": "12",
               "code": "AR-12-P",
-              "modelURL": ""
+              "modelURL": "/models/hoses/PROGold/Polyester/12/12.glb"
             },
             {
               "id": 10205,
               "value": "16",
               "code": "AR-16-P",
-              "modelURL": ""
+              "modelURL": "/models/hoses/PROGold/Polyester/16/16.glb"
             },
             {
               "id": 10206,
               "value": "20",
               "code": "AR-20-P",
-              "modelURL": ""
+              "modelURL": "/models/hoses/PROGold/Polyester/20/20.glb"
             }
           ]
         },
@@ -125,49 +125,49 @@
               "id": 10302,
               "value": "08",
               "code": "AR-08-AM",
-              "modelURL": ""
+              "modelURL": "/models/hoses/PROGold/Aramid/08/08.glb"
             },
             {
               "id": 10303,
               "value": "10",
               "code": "AR-10-AM",
-              "modelURL": ""
+              "modelURL": "/models/hoses/PROGold/Aramid/10/10.glb"
             },
             {
               "id": 10304,
               "value": "12",
               "code": "AR-12-AM",
-              "modelURL": ""
+              "modelURL": "/models/hoses/PROGold/Aramid/12/12.glb"
             },
             {
               "id": 10305,
               "value": "16",
               "code": "AR-16-AM",
-              "modelURL": ""
+              "modelURL": "/models/hoses/PROGold/Aramid/16/16.glb"
             },
             {
               "id": 10306,
               "value": "20",
               "code": "AR-20-AM",
-              "modelURL": ""
+              "modelURL": "/models/hoses/PROGold/Aramid/20/20.glb"
             },
             {
               "id": 10307,
               "value": "24",
               "code": "AR-24-AM",
-              "modelURL": ""
+              "modelURL": "/models/hoses/PROGold/Aramid/24/24.glb"
             },
             {
               "id": 10308,
               "value": "28",
               "code": "AR-28-AM",
-              "modelURL": ""
+              "modelURL": "/models/hoses/PROGold/Aramid/28/28.glb"
             },
             {
               "id": 10309,
               "value": "32",
               "code": "AR-32-AM",
-              "modelURL": ""
+              "modelURL": "/models/hoses/PROGold/Aramid/32/32.glb"
             }
           ]
         },
@@ -186,19 +186,19 @@
               "id": 10402,
               "value": "08",
               "code": "AR-08-HTP",
-              "modelURL": ""
+              "modelURL": "/models/hoses/PROGold/HTPB/08/08.glb"
             },
             {
               "id": 10403,
               "value": "20",
               "code": "AR-20-HTP",
-              "modelURL": ""
+              "modelURL": "/models/hoses/PROGold/HTPB/20/20.glb"
             },
             {
               "id": 10404,
               "value": "24",
               "code": "AR-24-HTP",
-              "modelURL": ""
+              "modelURL": "/models/hoses/PROGold/HTPB/24/24.glb"
             }
           ]
         },
@@ -217,7 +217,7 @@
               "id": 10502,
               "value": "08",
               "code": "AR-08-C",
-              "modelURL": ""
+              "modelURL": "/models/hoses/PROGold/ClearConvoluted/08/08.glb"
             },
             {
               "id": 10503,
