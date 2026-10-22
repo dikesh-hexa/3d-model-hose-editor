@@ -190,12 +190,30 @@
             },
             {
               "id": 10403,
+              "value": "10",
+              "code": "AR-10-HTP",
+              "modelURL": "/models/hoses/PROGold/HTPB/10/10.glb"
+            },
+            {
+              "id": 10404,
+              "value": "12",
+              "code": "AR-12-HTP",
+              "modelURL": "/models/hoses/PROGold/HTPB/12/12.glb"
+            },
+            {
+              "id": 10405,
+              "value": "16",
+              "code": "AR-16-HTP",
+              "modelURL": "/models/hoses/PROGold/HTPB/16/16.glb"
+            },
+            {
+              "id": 10406,
               "value": "20",
               "code": "AR-20-HTP",
               "modelURL": "/models/hoses/PROGold/HTPB/20/20.glb"
             },
             {
-              "id": 10404,
+              "id": 10407,
               "value": "24",
               "code": "AR-24-HTP",
               "modelURL": "/models/hoses/PROGold/HTPB/24/24.glb"
@@ -210,44 +228,14 @@
             {
               "id": 10501,
               "value": "06",
-              "code": "AR-06-C",
+              "code": "CCH-06",
               "modelURL": "/models/hoses/PROGold/ClearConvoluted/06/06.glb"
             },
             {
               "id": 10502,
               "value": "08",
-              "code": "AR-08-C",
+              "code": "CCH-08",
               "modelURL": "/models/hoses/PROGold/ClearConvoluted/08/08.glb"
-            },
-            {
-              "id": 10503,
-              "value": "10",
-              "code": "AR-10-C",
-              "modelURL": ""
-            },
-            {
-              "id": 10504,
-              "value": "12",
-              "code": "AR-12-C",
-              "modelURL": ""
-            },
-            {
-              "id": 10505,
-              "value": "16",
-              "code": "AR-16-C",
-              "modelURL": ""
-            },
-            {
-              "id": 10506,
-              "value": "20",
-              "code": "AR-20-C",
-              "modelURL": ""
-            },
-            {
-              "id": 10507,
-              "value": "24",
-              "code": "AR-24-C",
-              "modelURL": ""
             }
           ]
         }
@@ -267,31 +255,31 @@
             {
               "id": 20101,
               "value": "02",
-              "code": "SB-02-S",
+              "code": "SB-02-S-SD",
               "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel/02/02.glb"
             },
             {
               "id": 20102,
               "value": "03",
-              "code": "SB-03-S",
+              "code": "SB-03-S-SD",
               "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel/03/03.glb"
             },
             {
               "id": 20103,
               "value": "04",
-              "code": "SB-04-S",
+              "code": "SB-04-S-SD",
               "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel/04/04.glb"
             },
             {
               "id": 20104,
               "value": "06",
-              "code": "SB-06-S",
+              "code": "SB-06-S-SD",
               "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel/06/06.glb"
             },
             {
               "id": 20105,
               "value": "08",
-              "code": "SB-08-S",
+              "code": "SB-08-S-SD",
               "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel/08/08.glb"
             }
           ]
@@ -304,19 +292,19 @@
             {
               "id": 20201,
               "value": "02",
-              "code": "SB-02-SS-BK",
+              "code": "SB-02-S-SD-PVC",
               "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel & Black_PVC/02/02.glb"
             },
             {
               "id": 20202,
               "value": "03",
-              "code": "SB-03-SS-BK",
+              "code": "SB-03-S-SD-PVC",
               "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel & Black_PVC/03/03.glb"
             },
             {
               "id": 20203,
               "value": "04",
-              "code": "SB-04-SS-BK",
+              "code": "SB-04-S-SD-PVC",
               "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel & Black_PVC/04/04.glb"
             }
           ]
@@ -341,7 +329,7 @@
             {
               "id": 20303,
               "value": "04",
-              "code": "SB-04-K",
+              "code": "SB-04-K-H-SD",
               "modelURL": "/models/hoses/Smooth Bore Braids/Kevlar/04/04.glb"
             }
           ]
@@ -354,26 +342,26 @@
             {
               "id": 20401,
               "value": "06",
-              "code": "SB-06-SS-TPE",
+              "code": "SB-06-S-H-SD",
               "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel & Black_TPE/06/06.glb"
             },
             {
               "id": 20402,
               "value": "08",
-              "code": "SB-08-SS-TPE",
+              "code": "SB-08-S-H-SD",
               "modelURL": "/models/hoses/Smooth Bore Braids/Stainless_Steel & Black_TPE/08/08.glb"
             }
           ]
         },
         {
           "id": 205,
-          "name": "Convoluted HB",
+          "name": "Convoluted PTPE with Halar Braid",
           "image": "/data/braidType/div (4).png",
           "sizes": [
             {
               "id": 20501,
               "value": "06",
-              "code": "SB-06-CHB",
+              "code": "SC071-26-0-06",
               "modelURL": "/models/hoses/Smooth Bore Braids/Convoluted_HB/06/06.glb"
             }
           ]
@@ -386,13 +374,13 @@
             {
               "id": 20601,
               "value": "04",
-              "code": "SB-04-HP",
+              "code": "HPSB-04-S-SD",
               "modelURL": "/models/hoses/Smooth Bore Braids/High_Pressure/04/04.glb"
             },
             {
               "id": 20602,
               "value": "06",
-              "code": "SB-06-HP",
+              "code": "HPSB-06-S-SD",
               "modelURL": "/models/hoses/Smooth Bore Braids/High_Pressure/06/06.glb"
             }
           ]
@@ -405,7 +393,7 @@
             {
               "id": 20701,
               "value": "06",
-              "code": "SB-06-IGF",
+              "code": "SB-06-S-FC-SD",
               "modelURL": "/models/hoses/Smooth Bore Braids/Impregnated Glass Fibre/06/06.glb"
             }
           ]
@@ -418,13 +406,13 @@
             {
               "id": 20801,
               "value": "03",
-              "code": "SB-03-P",
+              "code": "SB-03-P-SD",
               "modelURL": "/models/hoses/Smooth Bore Braids/Polyester/03/03.glb"
             },
             {
               "id": 20802,
               "value": "04",
-              "code": "SB-04-P",
+              "code": "SB-04-P-SD",
               "modelURL": "/models/hoses/Smooth Bore Braids/Polyester/04/04.glb"
             }
           ]
@@ -437,13 +425,13 @@
             {
               "id": 20901,
               "value": "03",
-              "code": "SB-03-TR",
+              "code": "SB-03",
               "modelURL": "/models/hoses/Smooth Bore Braids/Translucent/03/03.glb"
             },
             {
               "id": 20902,
               "value": "04",
-              "code": "SB-04-TR",
+              "code": "SB-04",
               "modelURL": "/models/hoses/Smooth Bore Braids/Translucent/04/04.glb"
             }
           ]
@@ -490,12 +478,6 @@
               "value": "16",
               "code": "DR-16-AM",
               "modelURL": "/models/hoses/ProBlack Braids/ProBlack_SB_Aramid/16/16.glb"
-            },
-            {
-              "id": 30206,
-              "value": "20",
-              "code": "DR-20-AM",
-              "modelURL": ""
             }
           ]
         },
@@ -507,38 +489,32 @@
             {
               "id": 30301,
               "value": "06",
-              "code": "DR-06-S",
+              "code": "DR-06-SS",
               "modelURL": "/models/hoses/ProBlack Braids/ProBlack_SB_Stainless_Steel/06/06.glb"
             },
             {
               "id": 30302,
               "value": "08",
-              "code": "DR-08-S",
+              "code": "DR-08-SS",
               "modelURL": "/models/hoses/ProBlack Braids/ProBlack_SB_Stainless_Steel/08/08.glb"
             },
             {
               "id": 30303,
               "value": "10",
-              "code": "DR-10-S",
+              "code": "DR-10-SS",
               "modelURL": "/models/hoses/ProBlack Braids/ProBlack_SB_Stainless_Steel/10/10.glb"
             },
             {
               "id": 30304,
               "value": "12",
-              "code": "DR-12-S",
+              "code": "DR-12-SS",
               "modelURL": "/models/hoses/ProBlack Braids/ProBlack_SB_Stainless_Steel/12/12.glb"
             },
             {
               "id": 30305,
               "value": "16",
-              "code": "DR-16-S",
+              "code": "DR-16-SS",
               "modelURL": "/models/hoses/ProBlack Braids/ProBlack_SB_Stainless_Steel/16/16.glb"
-            },
-            {
-              "id": 30306,
-              "value": "20",
-              "code": "DR-20-S",
-              "modelURL": ""
             }
           ]
         }
